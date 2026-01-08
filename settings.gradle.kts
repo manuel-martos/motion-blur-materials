@@ -1,4 +1,4 @@
-rootProject.name = "motion_blur_materials"
+rootProject.name = "motion-blur-materials"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

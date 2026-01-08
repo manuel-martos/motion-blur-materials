@@ -1,6 +1,7 @@
 package dev.mmartos.effects.motion_blur_materials.composables
 
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
@@ -31,7 +32,8 @@ import kotlin.math.sin
  */
 @Composable
 fun SimpleAnimation(
-    modifier: Modifier = Modifier,
+    modifier: Modifier = Modifier
+        .fillMaxSize(),
 ) {
     val frameTime = rememberFrameTimeState()
     val gradient = remember {
