@@ -27,8 +27,10 @@ sealed interface MotionBlurMaterialsKey {
 
 @Composable
 @Preview
-fun App() {
-    var currentKey by remember { mutableStateOf<MotionBlurMaterialsKey>(HomeKey) }
+fun App(
+    initialKey: MotionBlurMaterialsKey = HomeKey,
+) {
+    var currentKey by remember { mutableStateOf(initialKey) }
     MaterialTheme {
         Column(
             modifier = Modifier
