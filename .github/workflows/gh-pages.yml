@@ -18,7 +18,7 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
       - uses: gradle/actions/wrapper-validation@v5
-      - uses: gradle/gradle-build-action@v3
+      - uses: gradle/actions/setup-gradle@v5
         with:
           cache-read-only: ${{ env.MAIN_BRANCH != 'true' }}
       - name: Build
