@@ -18,5 +18,6 @@ fun main() {
 
 private fun String.toAssetType(): AssetType? = when (this) {
     "asset01" -> AssetType.ASSET01
+    "asset02" -> AssetType.ASSET02
     else -> null
 }
