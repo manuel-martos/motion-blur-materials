@@ -88,7 +88,7 @@ private fun DrawScope.drawShutter(
                 translate(left = dx, top = dy) {
                     drawPath(
                         path = bladePath,
-                        color = Color(0x0ffefefef),
+                        color = Color(0x0ffd0d0d0),
                         style = Fill
                     )
                     drawPath(
