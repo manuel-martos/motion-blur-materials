@@ -41,6 +41,7 @@ fun AssetGallery(
             ) {
                 when (assetType) {
                     AssetType.ASSET01 -> SimpleAnimation()
+                    AssetType.ASSET02 -> MotionBlurAnimatedIllustration()
                 }
             }
         }
